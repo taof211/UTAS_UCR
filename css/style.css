@@ -1,1 +1,26 @@
-there's nothing;
+/*css for common elements*/
+
+
+
+/*css for home page*/
+
+/*css for registration*/
+
+/*css rental page*/
+
+/*css for detail page*/
+
+/*css for master page*/
+
+.mp-topbar {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    padding: 15px 16px;
+    height: 20px;
+    margin: 0px;
+}
+
+.mp-mune {float: left;max-width: auto;height: 25px;margin: 0 5px;}
+.mp-utaslogo {float: left;max-width: auto;height: 25px;}
+.mp-user {float:right;max-width: auto;height: 25px;}
+
