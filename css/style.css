@@ -1,6 +1,12 @@
 /*css for common elements*/
+html {
+    height:100%;
+}
 
-
+body {
+    margin:0;
+    height:100%;
+}
 
 /*css for home page*/
 
@@ -12,15 +18,44 @@
 
 /*css for master page*/
 
-.mp-topbar {
+#mp-topbar {
     background-color: rgb(0, 0, 0);
-    display: block;
     padding: 15px 16px;
     height: 20px;
     margin: 0px;
 }
 
-.mp-mune {float: left;max-width: auto;height: 25px;margin: 0 5px;}
-.mp-utaslogo {float: left;max-width: auto;height: 25px;}
+.mp-mune {float: left;max-width: auto;height: 25px;margin: 0 7px;}
+.mp-utaslogo {float: left;max-width: auto;height: 29px;}
 .mp-user {float:right;max-width: auto;height: 25px;}
 
+#mp-grid {
+    height:100%;
+}
+
+.mp-FI {float: left;max-width: auto;height: 25px;margin: 0 7px;}
+
+#mp-functions {
+    line-height: 3;
+    margin:0 auto;
+}
+
+#mp-SecH {
+    margin-left: 20px;
+}
+
+#mp-sections {
+    background-color: rgb(245,245,245);
+}
+
+#mp-devicelist {
+    background-color: rgb(229,229,229);
+}
+
+#mp-select {
+    margin-left:75%;
+    background-color: rgb(229,229,229);
+    border:none;
+    margin-top:15px;
+    margin-bottom: 20px;
+}

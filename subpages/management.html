@@ -2,68 +2,129 @@
 <html>
     <head>
         <title>Master Compute List</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
-<<<<<<< HEAD
-        <div id="mp-topbar" class="mp-topbar"style="boder:0" >
+        <div id="mp-topbar">
             <div id="mp-lefttop" >
                 <img class="mp-mune" src="../icon/mune.png">
                 <img class="mp-utaslogo" src="../img/utas-logo.png">
             </div>
-=======
-        <div id="mp-topbar">
-            <ul id="mp-lefttop">
-                <li><img src="../icon/mune.png"> </li>
-                <li><img src="../img/utas-logo.png"> </li>
-            </ul>
->>>>>>> 686d380e6f5a7992ad244d5b5557198e5caf4351
             <div id="mp-righttop">
                 <img class="mp-user" src="../icon/user.png">
             </div>
         </div>
-
         <div id="mp-menu">
-            <select id="mp-dropmenue">
-                <option value="HOME"><a href="../index.html">HOME</a></option>
-                <option value="RENTAL"><a href="rental.html">RENTAL</a></option>
-                <option value="ADMINISTRATION">ADMINISTRATION</option>
+            <select id="mp-dropmenue" onchange="window.location=this.value">
+                <option value="../index.html">HOME</option>
+                <option value="rental.html">RENTAL</option>
+                <option value="management.html">ADMINISTRATION</option>
             </select>
-        </div>
+        </div> 
 
-        <div id="mp-sections">
-            <h3>Sections</h3>
-            <table id="mp-functions">
-                <tbody>
-                    <tr>
-                        <td><img src="../icon/dashboard.png"> </td>
-                        <td>Dash Board</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../icon/group-users.png"></td>
-                        <td>User Management</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../icon/device.png"></td>
-                        <td>Master Device List</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div id="mp-devicelist">
-            <button type="button" id="mp-select">Select</button>
-            <ul>
-                <li><a>Apple MacBook Pro 14</a></li>
-                <li><a>Asus VivoBook M712 17.3</a></li>
-                <li><a>Microsoft Surface Laptop 4 13.5</a></li>
-                <li><a>Alienware M15 R6 15.6</a></li>
-                <li><a>Dell Inpsiron 5515 15.6</a></li>
-                <li><a>HP 639C2PA 15.6</a></li>
-                <li><a>HP Omen 17.3</a></li>
-                <li><a>Lenovo IdeaPad Slim 1 14</a></li>
-                <li><a>MSI GS66 Stealth 15.6</a></li>
-            </ul>
+        <div id="mp-grid" class="row">
+            <div id="mp-sections" class="col-2">
+                <div>
+                    <div id="mp-SecH"><h3>Sections</h3></div>
+                    <table id="mp-functions">
+                        <tbody>
+                            <tr>
+                                <td><img class="mp-FI" src="../icon/dashboard.png"> </td>
+                                <td>Dash Board</td>
+                            </tr>
+                            <tr>
+                                <td><img class="mp-FI" src="../icon/group-users.png" style=""></td>
+                                <td>User Management</td>
+                            </tr>
+                            <tr>
+                                <td><img class="mp-FI" src="../icon/device.png"></td>
+                                <td>Master Device List</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="mp-devicelist" class="col-2">
+                <div>
+                    <button type="button" id="mp-select">Select</button>
+                   <div id="mp-iframe">
+                    <ul>
+                        <li><a>Apple MacBook Pro 14</a></li>
+                        <li><a>Asus VivoBook M712 17.3</a></li>
+                        <li><a>Microsoft Surface Laptop 4 13.5</a></li>
+                        <li><a>Alienware M15 R6 15.6</a></li>
+                        <li><a>Dell Inpsiron 5515 15.6</a></li>
+                        <li><a>HP 639C2PA 15.6</a></li>
+                        <li><a>HP Omen 17.3</a></li>
+                        <li><a>Lenovo IdeaPad Slim 1 14</a></li>
+                        <li><a>MSI GS66 Stealth 15.6</a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div id="mp-devicedetail">
+                    <div ip="mp-devicebutton">
+                        <button type="button">Create</buttom>
+                        <button type="button">Edit</button>
+                    </div>
+                    <div id="mp-pic">
+                        <img src="../img/product-laptop/Apple MacBook Pro 14-inch with M1 Pro chip 512GB SSD (Silver) [2021].jpg">
+                    </div>
+                    <div id="mp-info">
+                        <table id="mp-detailinfo">
+                            <tbody>
+                                <tr>
+                                    <td>Manufacture</td>
+                                    <td>Apple</td>
+                                </tr>
+                                <tr>
+                                    <td>Type</td>
+                                    <td>Laptop</td>
+                                </tr>
+                                <tr>
+                                    <td>OS Type</td>
+                                    <td>macOS 12</td>
+                                </tr>
+                                <tr>
+                                    <td>Size</td>
+                                    <td>14 inch</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>Apple M1 Pro Chip (8 Core)</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>32 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Disk</td>
+                                    <td>1 TB SSD</td>
+                                </tr>
+                                <tr>
+                                    <td>USB Ports</td>
+                                    <td>3-USB type C</td>
+                                </tr>
+                                <tr>
+                                    <td>Other Ports</td>
+                                    <td>1-HDML Port; 1-Card Reader; 1-3.5mm Headphone Jack</td>
+                                </tr>
+                                <tr>
+                                    <td>Price</td>
+                                    <td>$5 per hour</td>
+                                </tr>
+                                <tr>
+                                    <td>Available Amount</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="mp-dashboard">
@@ -74,64 +135,6 @@
 
         </div>
 
-        <div id="mp-devicedetail">
-            <div ip="mp-devicebutton">
-                <button type="button">Create</buttom>
-                <button type="button">Edit</button>
-            </div>
-            <div id="mp-pic">
-                <img src="../img/product-laptop/Apple MacBook Pro 14-inch with M1 Pro chip 512GB SSD (Silver) [2021].jpg">
-            </div>
-            <div id="mp-info">
-                <table id="mp-detailinfo">
-                    <tbody>
-                        <tr>
-                            <td>Manufacture</td>
-                            <td>Apple</td>
-                        </tr>
-                        <tr>
-                            <td>Type</td>
-                            <td>Laptop</td>
-                        </tr>
-                        <tr>
-                            <td>OS Type</td>
-                            <td>macOS 12</td>
-                        </tr>
-                        <tr>
-                            <td>Size</td>
-                            <td>14 inch</td>
-                        </tr>
-                        <tr>
-                            <td>CPU</td>
-                            <td>Apple M1 Pro Chip (8 Core)</td>
-                        </tr>
-                        <tr>
-                            <td>RAM</td>
-                            <td>32 GB</td>
-                        </tr>
-                        <tr>
-                            <td>Disk</td>
-                            <td>1 TB SSD</td>
-                        </tr>
-                        <tr>
-                            <td>USB Ports</td>
-                            <td>3-USB type C</td>
-                        </tr>
-                        <tr>
-                            <td>Other Ports</td>
-                            <td>1-HDML Port; 1-Card Reader; 1-3.5mm Headphone Jack</td>
-                        </tr>
-                        <tr>
-                            <td>Price</td>
-                            <td>$5 per hour</td>
-                        </tr>
-                        <tr>
-                            <td>Available Amount</td>
-                            <td>12</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+
     </body>
 </html>
