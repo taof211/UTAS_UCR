@@ -16,7 +16,62 @@ body {
 
 /*css for detail page*/
 
-/*css for master page*/
+/*css for management login page*/
+
+#mlp-main {
+    background-image: url("../img/homepage-background.jpg");
+    background-size: 100% 100%;
+}
+
+#mlp-main {
+    height:100%;
+}
+
+#mlg-background {
+    height:100%;
+}
+
+#mlp-loginwindow {
+    position:fixed;
+    top:35%;
+    left:38%;
+    right:40%;
+    background-color:rgb(131, 130, 130);
+    height:200px;
+    width:450px;
+}
+
+#mlp-login {
+    color:white;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom: 50px;
+}
+
+#mlp-back {
+    color: white;
+    background-color:rgb(131, 130, 130);
+    border: none;
+    float:right;
+}
+
+#mlp-buttonline {
+    text-align: center;
+}
+
+.mlp-button {
+    display:block;
+    margin:0 auto;
+}
+
+#mlp-sendcode {
+    background-color:white;
+    width:140px;
+    height:25px;
+    border-radius: 8px;
+}
+
+/*css for management page*/
 
 .mp-divlist {
     list-style-type: none;
