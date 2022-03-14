@@ -19,11 +19,12 @@
         </div>
         <div id="mp-menu">
             <select id="mp-dropmenue" onchange="window.location=this.value">
+                <option> </option>
                 <option value="../index.html">HOME</option>
                 <option value="rental.html">RENTAL</option>
                 <option value="management.html">ADMINISTRATION</option>
             </select>
-        </div> 
+        </div>
         <div id="mlp-main">
             <div id="mlp-loginwindow">
                 <button type="button" id="mlp-back">&times;</button>
@@ -34,15 +35,15 @@
                         <tbody>
                             <tr>
                                 <td class="mlp-td"> <label for="mlp-username/email">Username/Email</label></td>
-                                <td class="mlp-td"><input type="text" id="mlp-username/email" required></td>
+                                <td class="mlp-td"><input type="text" id="mlp-username/email" class="mlp-input" required></td>
                             </tr>
                             <tr>
                                 <td class="mlp-td"><label for="mlp-password">Password</label></td>
-                                <td class="mlp-td"><input type="text" id="mlp-password" required></td>
+                                <td class="mlp-td"><input type="text" id="mlp-password" class="mlp-input" required></td>
                             </tr>
                             <tr>
                                 <td class="mlp-td"><label for="mlp-vcode">Verified Code</label></td>
-                                <td><input type="text" pattern="[0-9],{6}" required></td>
+                                <td><input type="text" class="mlp-input" pattern="[0-9],{6}" required></td>
                             </tr class="mlp-td">
                             <tr id="mpl-buttonline">
                                 <td class="mlp-td"><button type="button" id="mlp-sendcode" class="mlp-button">Send Verify Code</button></td>

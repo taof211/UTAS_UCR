@@ -33,12 +33,12 @@ body {
 
 #mlp-loginwindow {
     position:fixed;
-    top:35%;
+    top:28%;
     left:38%;
     right:40%;
     background-color:rgb(131, 130, 130);
-    height:200px;
-    width:450px;
+    height:450px;
+    width:500px;
 }
 
 #mlp-login {
@@ -46,6 +46,16 @@ body {
     margin-left:50px;
     margin-right:50px;
     margin-bottom: 50px;
+    font-size: larger;
+}
+
+#mlp-table {
+    border-collapse:separate; 
+    border-spacing:10px 50px; 
+}
+
+.mlp-input {
+    border-radius: 8px;
 }
 
 #mlp-back {
@@ -66,8 +76,13 @@ body {
 
 #mlp-sendcode {
     background-color:white;
-    width:140px;
-    height:25px;
+    width:150px;
+    border-radius: 8px;
+}
+
+#mlp-submit {
+    background-color:white;
+    height:35px;
     border-radius: 8px;
 }
 
