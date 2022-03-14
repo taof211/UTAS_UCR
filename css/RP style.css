@@ -1,0 +1,9 @@
+.btn /*按钮属性*/{
+    background-color:rgb(255, 255, 255) ;
+    height: 24px;
+    border-radius: 20px;
+    line-height: 5px;
+    width: 150px;
+    color: #080808;
+    font-size: small;
+}
