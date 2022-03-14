@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>Registration page</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/RP style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello,Friends!</h1>
+        <h3>Fill up personal information and start journay with us</h3>
+            <!-- Form -->
+            <form id="RP form">
+                <div class="form-group">
+                    <label for="txt_full_name">Full Name</label>
+                    <input type="text" class="form-control" id="txt_full_name"
+                        placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="txt_email">Email</label>
+                    <input type="email" class="form-control" id="txt_email" placeholder="Your Email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="Phone_number">Mobile Phone Number</label>
+                    <input type="tel" class="form-control" id="Phone_number" placeholder="Your Mobile Phone Number"
+                    maxlength="10" pattern="^(04)\d{8}$" required
+                    title="Please enter Australian telephone number" >
+                </div>
+                <div class="form-group">
+                    <label for="txt_pwd">Password</label>
+                    <input type="password" class="form-control" id="txt_pwd" placeholder="Enter Password"
+                        minlength="5" maxlength="10" size="10" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%#*?&])[A-Za-z\d$@$!%#*?&]{5,10}"
+                        title="“Password must contain 5 - 10 letters with at least one number" required>
+                </div>
+                <div class="form-group">
+                    <label for="txt_check_pwd">Confirm Password</label>
+                    <input type="password" class="form-control" id="txt_check_pwd"
+                        placeholder="Please Confirm Password" minlength="5" maxlength="10" size="10"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%#*?&])[A-Za-z\d$@$!%#*?&]{5,10}"
+                        title="“Password must contain 5 - 10 letters with at least one number" required>
+                </div>
+                <div class="form-group">
+                    <label for="txt_SecurityCode">Enter security code</label>
+                    <input type="tel" class="form-control" id="txt_SecurityCode"
+                        placeholder="Your Security Code" required>
+                </div>
+                <button class="btn" type="button" class="btn btn-primary"><b>Verify Email</b></button>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="ckb_age" required>
+                        <label for="ckb_age" class="custom-control-label">
+                            <span> Creating an account, you agree that you've read and accepted our 
+                            <a href="file:///E:/502assignment%201/html/registration%20page.html">User Privacy Notice</a></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn"  type="submit" class="btn btn-primary"><b>Submit</b></button>
+            </form>
+    </div>
+
+
+
+
+
+
+
+</body>
