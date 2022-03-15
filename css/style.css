@@ -1,11 +1,215 @@
 /*css for common elements*/
+html {
+    height:100%;
+}
+
+body {
+    margin:0;
+    height:100%;
+}
 
 /*css for home page*/
 
 /*css for registration*/
+.RegP-btn /*按钮属性*/{
+    background-color:rgb(255, 255, 255) ;
+    height: 24px;
+    border-radius: 20px;
+    line-height: 5px;
+    width: 150px;
+    color: #080808;
+    font-size: small;
+    border-style: none;
+    display: block;
+    margin: auto;
+}
+.RegP-centertext{
+    text-align: center  
+    
+}
+.RegP-color{
+    background-color: #000000;
+    color: azure;
+}
+.RegP-form{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 320px;
+    padding: 16px;
+}
 
 /*css rental page*/
 
 /*css for detail page*/
 
-/*css for master page*/
+/*css for management login page*/
+
+#mlp-main {
+    background-image: url("../img/homepage-background.jpg");
+    background-size: 100% 100%;
+}
+
+#mlp-main {
+    height:100%;
+}
+
+#mlg-background {
+    height:100%;
+}
+
+#mlp-loginwindow {
+    position:fixed;
+    top:28%;
+    left:38%;
+    right:40%;
+    background-color:rgb(131, 130, 130);
+    height:450px;
+    width:500px;
+}
+
+#mlp-login {
+    color:white;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+#mlp-table {
+    border-collapse:separate; 
+    border-spacing:10px 50px; 
+}
+
+.mlp-input {
+    border-radius: 8px;
+}
+
+#mlp-back {
+    color: white;
+    background-color:rgb(131, 130, 130);
+    border: none;
+    float:right;
+}
+
+#mlp-buttonline {
+    text-align: center;
+}
+
+.mlp-button {
+    display:block;
+    margin:0 auto;
+}
+
+#mlp-sendcode {
+    background-color:white;
+    width:150px;
+    border-radius: 8px;
+}
+
+#mlp-submit {
+    background-color:white;
+    height:35px;
+    border-radius: 8px;
+}
+
+/*css for management page*/
+
+.mp-divlist {
+    list-style-type: none;
+    display:block;
+    margin:10px;
+}
+
+#mp-topbar {
+    background-color: rgb(0, 0, 0);
+    padding: 15px 16px;
+    height: 20px;
+    margin: 0px;
+}
+
+.mp-mune {float: left;max-width: auto;height: 25px;margin: 0 7px;}
+.mp-utaslogo {float: left;max-width: auto;height: 29px;}
+.mp-user {float:right;max-width: auto;height: 25px;}
+
+#mp-grid {
+    height:100%;
+}
+
+.mp-FI {float: left;max-width: auto;height: 25px;margin: 0 7px;}
+
+#mp-functions {
+    line-height: 3;
+    margin:0 auto;
+}
+
+#mp-SecH {
+    margin-left: 20px;
+}
+
+#mp-sections {
+    background-color: rgb(245,245,245);
+}
+
+#mp-rightside {
+    height:100%;
+    margin:0px;
+}
+
+#mp-rightsecs {
+    height:100%
+}
+
+#mp-devicelist {
+    background-color: rgb(229,229,229);
+}
+
+#mp-select {
+    margin-left:85%;
+    background-color: rgb(229,229,229);
+    border:none;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#mp-headOfMDL {
+    border-bottom:2px solid black;
+    width:100%;
+    height:8%;
+    margin:0px;
+}
+
+#mp-righttitle {
+    margin-top: 2%;
+}
+
+#mp-devicebutton {
+    float:right;
+    margin-right:px;
+    margin-top:5px;
+}
+
+#mp-iframe {
+    margin-left: 0%;
+}
+
+.mp-edit {
+    margin:3px;
+    background-color: rgb(229,229,229);
+    border:none;
+    border-radius: 5px;
+    width:80px;
+}
+
+#mp-textinfo {
+    margin-top:30px;
+}
+
+.mp-inforaw {
+    width: 175px;
+}
+
+#mp-pic {
+    margin-left:0;
+    margin-top: 0;
+}

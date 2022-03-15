@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login as Administrator</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body id="mlp-body">
+        <div id="mp-topbar">
+            <div id="mp-lefttop" >
+                <img class="mp-mune" src="../icon/mune.png">
+                <img class="mp-utaslogo" src="../img/utas-logo.png">
+            </div>
+            <div id="mp-righttop">
+                <img class="mp-user" src="../icon/user.png">
+            </div>
+        </div>
+        <div id="mp-menu">
+            <select id="mp-dropmenue" onchange="window.location=this.value">
+                <option> </option>
+                <option value="../index.html">HOME</option>
+                <option value="rental.html">RENTAL</option>
+                <option value="management.html">ADMINISTRATION</option>
+            </select>
+        </div>
+        <div id="mlp-main">
+            <div id="mlp-loginwindow">
+                <button type="button" id="mlp-back">&times;</button>
+                </br>
+                </br>
+                <form id="mlp-login">
+                    <table id="mlp-table">
+                        <tbody>
+                            <tr>
+                                <td class="mlp-td"> <label for="mlp-username/email">Username/Email</label></td>
+                                <td class="mlp-td"><input type="text" id="mlp-username/email" class="mlp-input" required></td>
+                            </tr>
+                            <tr>
+                                <td class="mlp-td"><label for="mlp-password">Password</label></td>
+                                <td class="mlp-td"><input type="text" id="mlp-password" class="mlp-input" required></td>
+                            </tr>
+                            <tr>
+                                <td class="mlp-td"><label for="mlp-vcode">Verified Code</label></td>
+                                <td><input type="text" class="mlp-input" pattern="[0-9],{6}" required></td>
+                            </tr class="mlp-td">
+                            <tr id="mpl-buttonline">
+                                <td class="mlp-td"><button type="button" id="mlp-sendcode" class="mlp-button">Send Verify Code</button></td>
+                                <td class="mlp-td"><button type="submit" id="mlp-submit" class="mlp-button">Login</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
