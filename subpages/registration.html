@@ -15,7 +15,7 @@
 </head>
 
 <body style="height: 900px; color: black;">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top bg-black">
+    <nav style="height:40px" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top bg-black">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
             <span class="navbar-toggler-icon"></span>
@@ -32,65 +32,69 @@
         <div class="RegP-bgimage">
             
             <div class="RegP-color RegP-form" id="RegP-Form">
-                <br><br>
-                <h1>Hello,Friends!</h1>
-                <h3>Fill up personal information and start journay with us</h3>
+                <div class="RegP-centertext">
+                    <br><br>
+                    <h3><b>Hello,Friends!</b></h3>
+                    <h6>Fill up personal information and start journay with us</h6>
+                </div>
+                <div class="RegP-inform">
                     <!-- Form -->
                     <form action="/action_page.php">
                         <div class="form-group">
                             <label for="txt_full_name">Full Name</label>
-                            <input style="border-radius:11px;" type="text" class="form-control" id="txt_full_name"
+                            <input type="text" class="form-control RegP-inputstyle" id="txt_full_name"
                                 placeholder="Your Full Name" required>
                         </div>
                         <div class="form-group">
                             <label for="txt_email">Email</label>
-                            <input style="border-radius:11px;" type="email" class="form-control" id="txt_email" placeholder="Your Email"
+                            <input type="email" class="form-control RegP-inputstyle" id="txt_email" placeholder="Your Email"
                                 required>
                         </div>
                         <div class="form-group">
                             <label for="Phone_number">Mobile Phone Number</label>
-                            <input style="border-radius:11px;" type="tel" class="form-control" id="Phone_number" placeholder="Your Mobile Phone Number"
+                            <input type="tel" class="form-control RegP-inputstyle" id="Phone_number" placeholder="Your Mobile Phone Number"
                             maxlength="10" pattern="^(04)\d{8}$" required
                             title="Please enter Australian telephone number" >
                         </div>
                         <div class="form-group">
                             <label for="txt_pwd">Password</label>
-                            <input style="border-radius:11px;" type="password" class="form-control" id="txt_pwd" placeholder="Enter Password"
+                            <input type="password" class="form-control RegP-inputstyle" id="txt_pwd" placeholder="Enter Password"
                                 minlength="5" maxlength="10" size="10" 
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%#*?&])[A-Za-z\d$@$!%#*?&]{5,10}"
                                 title="“Password must contain 5 - 10 letters with at least one number" required>
                         </div>
                         <div class="form-group">
                             <label for="txt_check_pwd">Confirm Password</label>
-                            <input style="border-radius:11px;" type="password" class="form-control" id="txt_check_pwd"
+                            <input type="password" class="form-control RegP-inputstyle" id="txt_check_pwd"
                                 placeholder="Please Confirm Password" minlength="5" maxlength="10" size="10"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%#*?&])[A-Za-z\d$@$!%#*?&]{5,10}"
                                 title="“Password must contain 5 - 10 letters with at least one number" required>
                         </div>
                         <div class="form-group">
                             <label for="txt_SecurityCode">Enter security code</label>
-                            <input style="border-radius:11px;" type="tel" class="form-control" id="txt_SecurityCode"
+                            <input type="tel" class="form-control RegP-inputstyle" id="txt_SecurityCode"
                                 placeholder="Your Security Code" required>
                         </div>
                         <br><button class="RegP-btn" type="button" class="btn btn-primary"><b>Verify Email</b></button>
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
-                                <input style="border-radius:11px;" type="checkbox" class="custom-control-input" id="ckb_privacy" required>
+                                <input type="checkbox" class="custom-control-input RegP-inputstyle" id="ckb_privacy" required>
                                 <label for="ckb_privacy" class="custom-control-label">
-                                    <span> Creating an account, you agree that you've read and accepted our 
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#RegP-UserPrivacy">User Privacy Notice</a></span>
+                                    <span>an account, you agree that you've read and accepted our 
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#RegP-UserPrivacy">User Privacy Notice</a></span> 
                                 </label>
                             </div>
                         </div>
-                        
-                        <button class="RegP-btn"  type="submit" class="btn btn-primary"><b>Submit</b></button>
+                        <br>
+                        <button class="RegP-btn"  type="Sign up" class="btn btn-primary"><b>Submit</b></button>
                     </form>
+                </div>
             </div>
             <img width="100%" src ="../img/registration-background.jpg" alt="laptop background"/>
         </div>
         
     </div>
-    <div class="container-fluid RegP-centertext RegP-color" id="RegP bottom Statement">
+    <div class="container-fluid RegP-centertext RegP-color2" id="RegP bottom Statement">
         <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
         <table style="margin:auto">
