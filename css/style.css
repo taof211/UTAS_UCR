@@ -115,12 +115,6 @@ body {
 
 /*css for management page*/
 
-.mp-divlist {
-    list-style-type: none;
-    display:block;
-    margin:10px;
-}
-
 #mp-topbar {
     background-color: rgb(0, 0, 0);
     padding: 15px 16px;
@@ -130,86 +124,44 @@ body {
 
 .mp-mune {float: left;max-width: auto;height: 25px;margin: 0 7px;}
 .mp-utaslogo {float: left;max-width: auto;height: 29px;}
-.mp-user {float:right;max-width: auto;height: 25px;}
 
-#mp-grid {
+#mp-divice {
     height:100%;
 }
 
-.mp-FI {float: left;max-width: auto;height: 25px;margin: 0 7px;}
-
-#mp-functions {
-    line-height: 3;
-    margin:0 auto;
-}
-
-#mp-SecH {
-    margin-left: 20px;
-}
-
-#mp-sections {
-    background-color: rgb(245,245,245);
-}
-
-#mp-rightside {
+#mp-device-row {
     height:100%;
-    margin:0px;
 }
 
-#mp-rightsecs {
-    height:100%
-}
-
-#mp-devicelist {
-    background-color: rgb(229,229,229);
-}
-
-#mp-select {
-    margin-left:85%;
-    background-color: rgb(229,229,229);
-    border:none;
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-#mp-headOfMDL {
-    border-bottom:2px solid black;
-    width:100%;
-    height:8%;
-    margin:0px;
-}
-
-#mp-righttitle {
-    margin-top: 2%;
-}
-
-#mp-devicebutton {
-    float:right;
-    margin-right:px;
-    margin-top:5px;
+#mp-icon-div {
+    margin:1%;
 }
 
 #mp-iframe {
-    margin-left: 0%;
-}
-
-.mp-edit {
-    margin:3px;
-    background-color: rgb(229,229,229);
-    border:none;
-    border-radius: 5px;
-    width:80px;
-}
-
-#mp-textinfo {
-    margin-top:30px;
-}
-
-.mp-inforaw {
-    width: 175px;
+    margin-left: 1%;
+    margin-right:1%;
+    margin-top: 1%;
+    height:760px;
+    background-color: white;
 }
 
 #mp-pic {
     margin-left:0;
     margin-top: 0;
+}
+
+.tab-content {
+    width:100%;
+    height:97%;
+    margin:1%;
+    background-color:rgb(229, 229, 229);
+}
+
+#mp-devie {
+    text-align: center;
+    height:100%;
+}
+
+.mp-devices {
+    list-style-type: none;
 }

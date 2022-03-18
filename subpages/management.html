@@ -9,13 +9,8 @@
     </head>
     <body>
         <div id="mp-topbar">
-            <div id="mp-lefttop" >
-                <img class="mp-mune" src="../icon/mune.png">
-                <img class="mp-utaslogo" src="../img/utas-logo.png">
-            </div>
-            <div id="mp-righttop">
-                <img class="mp-user" src="../icon/user.png">
-            </div>
+            <img class="mp-mune" src="../icon/mune.png">
+            <img class="mp-utaslogo" src="../img/utas-logo.png">
         </div>
 
         <div id="mp-menu">
@@ -26,29 +21,21 @@
             </select>
         </div> 
 
-        <div id="mlp-usermenu">
-            <select id="mlp-dropmenue" onchange="window.location=this.value">
-                <option> </option>
-                <option value="administrationuser.html">MANAGE ACCOUNT</option>
-                <option>LOGOUT</option>
-            </select>
-        </div>
-
         <div class="d-flex align-items-start" style="height:100%">
             <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 5rem; height:100%;">
-                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                <ul class="nav nav-tabs nav-flush flex-column mb-auto text-center">
                     <li class="nav-item">
-                        <a href="#mp-dashboard" class="nav-link active py-3 border-bottom" data-bs-toggle="pill" aria-controls="mp-dashboard" aria-selected="true">
+                        <a href="#mp-dashboard" class="nav-link active py-3" data-bs-toggle="tab" aria-controls="mp-dashboard">
                         <img class="bi" width="24" height="24" src="../icon/dashboard.png" alt="Dashboard">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#mp-users" class="nav-link py-3 border-bottom" data-bs-toggle="pill" aria-controls="mp-users" aria-selected="false">
+                        <a href="#mp-users" class="nav-link py-3" data-bs-toggle="tab" aria-controls="mp-users">
                         <img class="bi" width="24" height="24" src="../icon/group-users.png">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#mp-device" class="nav-link py-3 border-bottom" data-bs-toggle="pill" aria-controls="mp-device" aria-selected="false">
+                        <a href="#mp-device" class="nav-link py-3" data-bs-toggle="tab" aria-controls="mp-device">
                         <img class="bi" width="24" height="24" src="../icon/device.png">
                         </a>
                     </li>
@@ -65,19 +52,64 @@
                     </ul>
                 </div>
             </div>
-                
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="mp-dashboard" role="tabpanel" aria-labelledby="dashboard-pill">
+                <div class="tab-pane fade show active" id="mp-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                     <h1>Dashboard is still in building</h1>
                     <p>Sorry, I'm a rubish</p>
                 </div>
-                <div class="tab-pane fade" id="mp-users" role="tabpanel" aria-labelledby="users-pill">
+                <div class="tab-pane fade" id="mp-users" role="tabpanel" aria-labelledby="users-tab">
                     <h1>Users management is still in building</h1>
                     <p>Sorry, I'm a rubish</p>
                 </div>
-                <div class="tab-pane fade" id="mp-device" role="tabpanel" aria-labelledby="device-pill">
-                    <h1>Devices</h1>
-                    <p>Sorry, I'm a rubish</p>
+                <div class="tab-pane fade container" id="mp-device">
+                    <div class="row" id="mp-device-row">
+                        <div class="col-6" id="mp-device-list-col" role="tabpanel" aria-labelledby="device-tab">
+                            <div id="mp-icon-div">
+                                <button type="button" id="mp-select">Select All</button>
+                                <button type="button" id="mp-edit">Edit</button>
+                            </div>
+                            <div id="mp-iframe">
+                                <ul>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="MBP 14" class="mp-item-select">
+                                        <a>Apple MacBook Pro 14</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="Asus VivoBook" class="mp-item-select">
+                                        <a>Asus VivoBook M712 17.3</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="Microsoft Surface" class="mp-item-select">
+                                        <a>Microsoft Surface Laptop 4 13.5</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="Alienware M15" class="mp-item-select">
+                                        <a>Alienware M15 R6 15.6</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="Dell Inpsiron" class="mp-item-select">
+                                        <a>Dell Inpsiron 5515 15.6</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="HP 639C2PA" class="mp-item-select">
+                                        <a>HP 639C2PA 15.6</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="HP Omen" class="mp-item-select">
+                                        <a>HP Omen 17.3</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="Lenovo IdeaPad" class="mp-item-select">
+                                        <a>Lenovo IdeaPad Slim 1 14</a>
+                                    </li>
+                                    <li class="mp-devices">
+                                        <input class="form-check-input" type="checkbox" value="MSI GS66" class="mp-item-select">
+                                        <a>MSI GS66 Stealth 15.6</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col">
                 </div>
             </div>
         </div>
