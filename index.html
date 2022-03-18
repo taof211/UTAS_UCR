@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href=" ">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- css icon-->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_3246117_wtsc9d82jz8.css">
@@ -27,25 +27,25 @@
 
 
 <body>
-    <div class="hometop-container">
-        <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute;
-        z-index: 1000;
-        opacity: 0.5;
-        color: #fff;
-        margin: auto; width:100%">
-            <a href="" style="color:white; margin-right:20px;" class="navbar-header">button</a>
-            <a href="homepage.html" class="navbar" style="color:white">Home</a>
-            <a href="" class="navbar" style="color:white">Rental</a>
-            <a href="" class="navbar" style="color:white">Administration</a>
-            <a href="" class="navbar iconfont icon-gouwuchekong" style="color:white; text-align:right;">
-                <a>
-                    <a href="" class="navbar iconfont icon-search" style="color:white; text-align:right;">
-                        <a>
-                            <a href="" class="navbar iconfont icon-geren" style="color:white; text-align:right;">
-                                <a>
-        </nav>
+    <div id="mp-topbar">
+        <div id="mp-lefttop" >
+            <img class="mp-mune" src="icon/mune.png">
+            <img class="mp-utaslogo" src="img/utas-logo.png">
+        </div>
+        <div id="mp-righttop">
+            <img class="mp-user" src="icon/user.png">
+        </div>
+    </div>
 
-        <img src="homepage-background2.jpg" style="width:100%; height:500px; display: table-cell;
+    <div id="mp-menu">
+        <select id="mp-dropmenue" onchange="window.location=this.value">
+            <option value="../index.html">HOME</option>
+            <option value="rental.html">RENTAL</option>
+            <option value="management.html">ADMINISTRATION</option>
+        </select>
+    </div> 
+
+    <img src="img/homepage-background2.jpg" style="width:100%; height:500px; display: table-cell;
         vertical-align: middle;">
         <div class="button" style="position: absolute;
         top: 400px;
