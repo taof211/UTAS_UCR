@@ -151,8 +151,8 @@ body {
     margin: 0px;
 }
 
-.mp-mune {float: left;max-width: auto;height: 25px;margin: 0 7px;}
-.mp-utaslogo {float: left;max-width: auto;height: 29px;}
+#mp-mune {float: left;max-width: auto;height: 25px;margin: 0 7px;}
+#mp-utaslogo {float: left;max-width: auto;height: 29px;}
 
 #mp-divice {
     height:100%;
@@ -172,6 +172,23 @@ body {
     margin-top: 1%;
     height:760px;
     background-color: white;
+}
+
+#mp-listgroup {
+    width:92%;
+}
+
+#mp-devicedetail {
+    position:absolute;
+    top:105px;
+    background-color: white;
+    height:760px;
+    width:56%;
+}
+
+#mp-devicecontent {
+    margin-top:3%;
+    padding-left:10%;
 }
 
 #mp-pic {
