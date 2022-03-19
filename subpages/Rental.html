@@ -1,218 +1,386 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <!-- title -->
-    <title>details</title>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-    <!-- css -->
-    <link rel="stylesheet" href=" ">
-
-    <!-- css icon-->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3246117_wtsc9d82jz8.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3246124_9nmvaw7ge9.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3246128_acf49nvpjx7.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3246348_8ocm7asc3hf.css">
-
-
-</head>
-
-<body>
-
-    <!-- top container -->
-    <div class="top-container" style="background-color:black; width:100%; height:150px;">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="" style="color:white; margin-right:20px;" class="navbar-header">button</a>
-            <a href="homepage.html" class="navbar" style="color:white">Home</a>
-            <a href="" class="navbar" style="color:white">Rental</a>
-            <a href="" class="navbar" style="color:white">Administration</a>
-            <a href="" class="navbar iconfont icon-gouwuchekong" style="color:white; text-align:right;">
-                <a>
-                    <a href="" class="navbar iconfont icon-search" style="color:white; text-align:right;">
-                        <a>
-                            <a href="" class="navbar iconfont icon-geren" style="color:white; text-align:right;">
-                                <a>
-                                    <div class="text" style="position: absolute;
-                                        top: 80px;
-                                        right: 10px;
-                                        left: 10px;
-                                        width: 80%;
-                                        height: 50%;
-                                        z-index: 1000;
-                                        opacity: 1;
-                                        color: #fff;
-                                        text-align: center;
-                                        display: block;
-                                        margin: auto;">
-                                        <h2>Which device is right for you ?</h2>
-                                    </div>
+    <head>
+        <title>Rental</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body id="renp-body" style="background-color:black;">
+        <!-- navbar -->
+        <nav class="navbar navbar-fixed-top navbar-transpent fixed-top" >
+            <!-- navbar left -->
+            <div>
+                <ul class="nav justify-content-end">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <img src="../icon/mune.png" class="dropdown-toggle" role="button" type="button" id="hp-menue" data-bs-toggle="dropdown" aria-expanded="false" style="height:30px;">
+                            <ul class="dropdown-menu" aria-labelledby="hp-menue">
+                                <li><a class="dropdown-item" href="#">HOME</a></li>
+                                <li><a class="dropdown-item" href="#">RENTAL</a></li>
+                                <li><a class="dropdown-item" href="#">ADMINISTRATION</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item">
+                        <span><a><img src="../img/utas-logo.png" width="auto" height="30"></a></span>
+                        
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- navbar right -->
+            <div>
+                <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a><img src="../icon/search.png" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
+                </li>
+                <li class="nav-item">
+                    <a><img src="../icon/chart.png" width="auto" height="17" ></a>&nbsp;&nbsp;&nbsp;
+                </li>
+                <li class="nav-item">
+                    <div class="dropstart">
+                        <img src="../icon/user.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="height:30px;">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">LOGIN</a></li>
+                            <li><a class="dropdown-item" href="#">REGISTRATION</a></li>
+                            <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+                            <li><a class="dropdown-item" href="#">MY ORDER</a></li>
+                        </ul>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                </li>
+                </ul>
+            </div>
         </nav>
-    </div>
 
-    <!-- middle container-->
-    <div class="middle-container" style="background-color:black; width:100%;height:1250px">
-        <div class="row">
-            <div class="col-sm-8 offset-2">
-                <div>
-                    <p style="color:white;display:inline;">Notebook</p>
-                    <p style="color:white;display:inline; ">Other</p>
-                </div>
+        <!--title-->
+        <div id="renp-title-sec" class="position-absolute top-0 start-50 translate-middle">
+            <h1 id="renp-title">Which device is right for you?</h1>
+        </div>
 
-                <!-- inside container -->
-                <div class="inside-container" style="background-color:white; width:100%;height:1250px">
-
-                    <!-- first row -->
-                    <div class="row ">
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="../img/product-laptop/Asus VivoBook M712 17.3 Full HD Laptop (512GB) [Ryzen 7].jpg " />
+        <!--main part-->
+        <div id="renp-main">
+            <ul class="nav nav-tabs justify-content-center" id="renp-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="notebook-tab" data-bs-toggle="tab" data-bs-target="#renp-notebook_list" type="button" role="tab" aria-controls="notebook" aria-selected="true">Notebook</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#renp-others_list" type="button" role="tab" aria-controls="others" aria-selected="false">Others</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="renp-tabcontent">
+                <div class="tab-pane fade show active" id="renp-notebook_list" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="list-group list-group-horizontal list-group-flush flex-fill min-width">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Apple MacBook Pro 14-inch with M1 Pro chip 512GB SSD (Silver) [2021].jpg">
+                                <h5>MacBook Pro 14 Inch</h5>
+                                <p>From AU$10 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                            <div class="card-body">
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Alienware M15 R6 15.6  FHD 165Hz Gaming Laptop (Intel i7) [RTX 3070].jpg">
+                                <h5>Alienware M15 R6</h5>
+                                <p>From AU$9 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Asus VivoBook M712 17.3 Full HD Laptop (512GB) [Ryzen 7].jpg">
                                 <h5>Asus VivoBook M712</h5>
-                                <p>$14</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="../img/product-laptop/Alienware M15 R6 15.6  FHD 165Hz Gaming Laptop (Intel i7) [RTX 3070].jpg " />
-                            </div>
-                            <div class="card-body">
-                                <h5>Alienware M15</h5>
-                                <p>$15</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/Apple MacBook Pro 14-inch with M1 Pro chip 512GB SSD (Silver) [2021].jpg " />
-                            </div>
-                            <div class="card-body">
-                                <h5>Apple Mac pro14</h5>
-                                <p>$15</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- second row -->
-                    <div class="row ">
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/Dell Inpsiron 5515 15.6 FHD Laptop (512GB) [Ryzen 7].jpg " />
-                            </div>
-                            <div class="card-body">
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal-sm list-group-flush flex-fill">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Dell Inpsiron 5515 15.6 FHD Laptop (512GB) [Ryzen 7].jpg">
                                 <h5>Dell Inpsiron 5515</h5>
-                                <p>$13</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/HP 639C2PA 15.6 HD Laptop (512GB) [Intel i7].jpg " />
-                            </div>
-                            <div class="card-body">
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/HP 639C2PA 15.6 HD Laptop (512GB) [Intel i7].jpg">
                                 <h5>HP 639C2PA</h5>
-                                <p>$14</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/HP Omen 17.3 QHD 144Hz Gaming Laptop (Intel i7) [RTX 3080].jpg " />
-                            </div>
-                            <div class="card-body">
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/HP Omen 17.3 QHD 144Hz Gaming Laptop (Intel i7) [RTX 3080].jpg">
                                 <h5>HP Omen 17.3</h5>
-                                <p>$13</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal-md list-group-flush flex-fill">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Lenovo IdeaPad Slim 1 14 HD Laptop (64GB) [AMD 3020E].jpg">
+                                <h5>Lenovo IdeaPad</h5>
+                                <p>From AU$3 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/Microsoft Surface Laptop 4 13.5 Ryzen 5 256GB16GB (Matte Black).jpg">
+                                <h5>Surface Laptop 4</h5>
+                                <p>From AU$8 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-laptop/MSI GS66 Stealth 15.6 QHD Gaming Laptop (Intel i7) [RTX 3080 Max-Q].jpg">
+                                <h5>MSI GS66 Stealth 15.6</h5>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="renp-notebook-pages">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center" id="renp-page-table1">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
 
-                    <!-- third row -->
-                    <div class="row ">
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/Lenovo IdeaPad Slim 1 14 HD Laptop (64GB) [AMD 3020E].jpg " />
+                <div class="tab-pane fade" id="renp-others_list" role="tabpanel" aria-labelledby="profile-tab">
+                    <ul class="list-group list-group-horizontal list-group-flush flex-fill">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Apple Magic Keyboard [2021].jpg">
+                                <h5>Apple Magic Keyboard</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                            <div class="card-body">
-                                <h5>Lenovo IdeaPad Slim 1</h5>
-                                <p>$14</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Belkin BoostUp Charge 2500mAH Magnetic Power Bank for iPhone 13:12 (White).jpg">
+                                <h5>Belkin BoostUp Charge</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mx-auto" style="border:none;">
-                                <img src="img/product-laptop/Microsoft Surface Laptop 4 13.5 Ryzen 5 256GB16GB (Matte Black).jpg " />
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Belkin USB-C Multimedia Hub with Power Pass Thru Technology.jpg">
+                                <h5>Belkin USB-C Hub</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                            <div class="card-body ">
-                                <h5>Microsoft Surface Laptop 4</h5>
-                                <p>$14</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal-sm list-group-flush flex-fill">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/HP Deskjet Plus 4123e All-In-One Printer.jpg">
+                                <h5>HP Deskjet Plus Printer</h5>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
-                        <div class="col-4 ">
-                            <div class="card mx-auto " style="border:none; ">
-                                <img src="img/product-laptop/MSI GS66 Stealth 15.6 QHD Gaming Laptop (Intel i7) [RTX 3080 Max-Q].jpg " />
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Seagate Expansion Portable 2TB Hard Drive.jpg">
+                                <h5>Seagate Portable</h5>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                            <div class="card-body ">
-                                <h5>MSI GS66 Stealth </h5>
-                                <p>$15</p>
-                                <button>cart</button><br>
-                                <a href="">Detail</a>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Apple Magic Keyboard [2021].jpg">
+                                <h5>Apple Magic Keyboard</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
                             </div>
-                        </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal-md list-group-flush flex-fill">
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Belkin BoostUp Charge 2500mAH Magnetic Power Bank for iPhone 13:12 (White).jpg">
+                                <h5>Belkin BoostUp Charge</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/Belkin USB-C Multimedia Hub with Power Pass Thru Technology.jpg">
+                                <h5>Belkin USB-C Hub</h5>
+                                <p>From AU$2 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <img src="../img/product-other/HP Deskjet Plus 4123e All-In-One Printer.jpg">
+                                <h5>HP Deskjet Plus Printer</h5>
+                                <p>From AU$5 per hour</p>
+                                <button type="button" class="btn btn-dark">Add to Chart</button><hr>
+                                <a>Learn More ></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="renp-others-pages">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center" id="renp-page-table2">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!-- bottom container -->
-    <div class="bottom-container ">
-
-        <img src="img/detail-background.jpg " style="width:100%; height:500px; display: table-cell; vertical-align: middle; ">
-
-        <div class="bottom " style="position: absolute;top: 1700px; right: 10px; left: 10px; width: 80%; z-index: 1000; opacity: 1; color: #fff; text-align: center; display: block; margin: auto; ">
-
-            <div class="text-container " style="text-align: center ">
-                <div style="font-size:20px; margin-top:50px; ">
-                    <a href=" " class="iconfont icon-youxiang " style="color:white; font-size:20px; ">
-                        <a>
-                            <a href=" " class="iconfont icon-facebook " style="color:white; font-size:20px; ">
-                                <a>
-                                    <a href=" " class="iconfont icon-tuite " style="color:white; font-size:20px; ">
-                                        <a>
-
+        <!--bottom-->
+        <div id="renp-bottom-background">
+            <img id="renp-backgroundpic" src="../img/detail-background.jpg">
+        </div>
+        <div id="renp-bottom-characters" style="background-color:rgb(0, 0, 0); height: 220px;">
+            <div class="text-container" style="text-align: center">
+                <div style="font-size:20px; margin-top:170px;">
+                    <a href=""><img src="../icon/Email.png" width="auto" height="20"></a>
+                    <a href=""><img src="../icon/twtter.png" width="auto" height="20"></a>
+                    <a href=""><img src="../icon/facebook.png" width="auto" height="20"></a>
                 </div>
 
-                <p id="bottomtext " style="color:white; ">Authorised by the Executive Director of Marketing.</p>
-                <p>07 Dec,2021 University of Tasmania,Australia,ABN 30 764 782. CRICOS Provider Code 00586B</p>
+                <p style="color:white;line-height:20px"><font size="2">
+                Authorised by the Executive Director of Marketing<br>
+                © 07 Dec, 2021 University of Tasmania, Australia. ABN 30 764 374 782. CRICOS Provider Code 00586B<br>
+                <a href=""style="color:white;"data-bs-toggle="modal" data-bs-target="#RegP-UserPrivacy">Privacy</a>
+                </font></p>
             </div>
-
         </div>
-    </div>
-
-
-</body>
-
+        <div class="modal" id="RegP-UserPrivacy">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">User Privacy Notice</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <form>
+                            <h4>Declaration</h4>
+                            <p>At UTAS Computer Rental Services, accessible from www.ucr.utas.edu.au, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by UTAS Computer Rental Services and how we use it.<p>
+                            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>    
+                            <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in UTAS Computer Rental Services. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                                
+                            <h4>Consent</h4> 
+                            <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+                                
+                            <h4>Information we collect</h4>
+                            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+                            <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+                            <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+    
+                            <h4>How we use your information</h4>
+                            <p>We use the information we collect in various ways, including to:</p>
+                            <ul>
+                                <li>Provide, operate, and maintain our website</li>
+                                <li>Improve, personalize, and expand our website</li>
+                                <li> Understand and analyze how you use our website</li>
+                                <li>Develop new products, services, features, and functionality</li>
+                                <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+                                <li>Send you emails</li>
+                                <li>Find and prevent fraud</li>
+                            </ul> 
+                                
+                            <h4>Log Files</h4>
+                            <p>UTAS Computer Rental Services follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+                                
+                            <h4>Cookies and Web Beacons</h4>
+                            <p>Like any other website, UTAS Computer Rental Services uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+                            <p>For more general information on cookies, please read the Cookies article on Wiki.</p>
+                                
+                            <h4>Advertising Partners Privacy Policies</h4>
+                                
+                            <p>You may consult this list to find the Privacy Policy for each of the advertising partners of UTAS Computer Rental Services.</p>
+                            <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on UTAS Computer Rental Services, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                            <p>Note that UTAS Computer Rental Services has no access to or control over these cookies that are used by third-party advertisers.</p>   
+                                
+                            <h4>Third Party Privacy Policies</h4>
+                            <p>UTAS Computer Rental Services's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.</p>    
+                            <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>    
+                                
+                            <h4>CCPA Privacy Rights (Do Not Sell My Personal Information)</h4>
+                            <p>Under the CCPA, among other rights, California consumers have the right to:</p>   
+                            <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>    
+                            <p>Request that a business delete any personal data about the consumer that a business has collected.</p>    
+                            <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>    
+                            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>    
+                                
+                            <h4>GDPR Data Protection Rights</h4>    
+                            <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>    
+                            <p>The right to access: You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+                            <p>The right to rectification: You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+                            <p>The right to erasure: You have the right to request that we erase your personal data, under certain conditions.</p>
+                            <p>The right to restrict processing: You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+                            <p>The right to object to processing: You have the right to object to our processing of your personal data, under certain conditions.</p>    
+                            <p>The right to data portability: You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>    
+                            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>                                      
+                            <button type="submit" class="btn btn-dark">Confirm</button>
+                        </form>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
