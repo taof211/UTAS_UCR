@@ -28,7 +28,7 @@ body {
     
 }
 .RegP-inform{
-    width: 260px;
+    width: 250px;
     margin: auto;
     left:0;
     right:0;
@@ -46,13 +46,13 @@ body {
 .RegP-form{
     font-size: small;
     position: absolute;
-    right: 30px;
+    right: 105px;
     margin: 20px;
-    max-width: 400px;
+    max-width: 380px;
     padding: 16px;
 }
 .RegP-inputstyle{
-    border-radius:16px; 
+    border-radius:10px; 
     background-color: rgba(0, 0, 0, 0);
     height: 30px;
     font-size: small;
@@ -66,6 +66,9 @@ body {
 }
 .-Backgrougimage{
     font-size: small;
+}
+.Regp-labelstyle{
+    font-size: 12px;
 }
 
 /*css rental page*/
