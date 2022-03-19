@@ -70,6 +70,41 @@ body {
 
 /*css rental page*/
 
+#renp-body {
+    text-align: center;
+}
+
+#renp-title-sec {
+    margin-top:200px;
+    text-align: center;
+}
+
+#renp-title {
+    color:white;
+    text-align: center;
+}
+
+#renp-tab {
+    margin: auto;
+    border: none;
+}
+
+#renp-main {
+    text-align: center;
+    margin-top:20%;
+}
+
+#renp-tabcontent {
+    background-color: white;
+    width:51%;
+    margin:auto;
+}
+
+#renp-backgroundpic {
+    width:51%;
+    margin:auto;
+}
+
 /*css for detail page*/
 
 /*css for management login page*/
