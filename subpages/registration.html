@@ -15,19 +15,58 @@
 </head>
 
 <body style="height: 900px; color: black;">
-    <nav style="height:40px" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top bg-black">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="expandme">
-            <div class="navbar-nav">
-                <a style="height:45px" href="" class="navbar-toggler-icon"></a>
-                <a href="" class="nav-item nav-link"><img style="height: 35px;" src="../img/utas-logo.png" alt="TasmaniaUniversityLogo"/></a>
-                
-            </div>
+    <nav class="navbar navbar-fixed-top navbar-transpent fixed-top" >
+        <!-- navbar left -->
+        <div>
+            <ul class="nav justify-content-end">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <span><a><img src="../icon/mune.png" width="auto" height="22"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"></a></span>
+                </li>
+                &nbsp;&nbsp;
+                <li class="nav-item">
+                    <span><a><img src="../img/utas-logo.png" width="auto" height="30"></a></span>
+                    
+                </li>
+            </ul>
+        </div>
+    
+        <!-- navbar right -->
+        <div>   
+            
+            <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a><img src="../icon/search.png" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+                <a><img src="../icon/chart.png" width="auto" height="17" ></a>&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+                <span><a><img src="../icon/user.png" width="auto" height="17"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown2"></a></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            </li>
+            </ul>
         </div>
     </nav>
+    <!--dropdownmenu left-->
+    <div>
+        <ul class="dropdown-menu dropdown-menu-dark   position-absolute top-0 start-0 bg-transparent"  id="navbarNavDarkDropdown">
+            <br><br>
+            <li><a class="dropdown-item" href="#">HOME</a></li>
+            <li><a class="dropdown-item" href="#">RENTAL</a></li>
+            <li><a class="dropdown-item" href="#">ADIMINITRAION</a></li>
+        </ul>
+    </div>
+    <!--dropdownmenu right-->
+    <div>
+        <ul class="dropdown-menu dropdown-menu-dark  position-absolute top-0 end-0  bg-transparent"  id="navbarNavDarkDropdown2"  >
+            <br><br>
+            <li><a class="dropdown-item" href="#">LOGOIN</a></li>
+            <li><a class="dropdown-item" href="#">REGISTRATION</a></li>
+            <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+            <li><a class="dropdown-item" href="#">MY ORDE</a></li>
+        </ul>
+    </div>
     <div class="container-fulid RegP-color" id="RegP-Backgrougimage">
         <div class="RegP-bgimage">
             
@@ -96,17 +135,20 @@
     <div class="container-fluid RegP-centertext RegP-color2" id="RegP bottom Statement">
         <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
-        <table style="margin:auto">
-            <tr>
-                <th><img style="height: 35px;" src="../icon/Email.png" alt="email"/></th>
-                <th><img style="height: 30px;" src="../icon/twtter.png" alt="twitter"/></th>
-                <th><img style="height: 30px;" src="../icon/facebook.png" alt="facebook"/></th>
-            </tr>
-        </table>
-        <p>Authorised by the Exective Director of Marketing.</p>
-        <p>©️ 07 DEC, 2021 Unoversity of Tasmania, Australia. ABN 30 764 374 782, CRICOS Provider Code 00586B</p>
-        <a href="" data-bs-toggle="modal" data-bs-target="#RegP-UserPrivacy">Privacy</a>
-        
+        <div style="background-color:rgb(0, 0, 0); height: 115px; text-align: center " >
+            <div style="font-size:20px; margin:auto">
+                <a href=""><img src="../icon/Email.png" width="auto" height="20"></a>
+                <a href=""><img src="../icon/twtter.png" width="auto" height="20"></a>
+                <a href=""><img src="../icon/facebook.png" width="auto" height="20"></a>
+            </div>
+
+            <p style="line-height:20px"><font size="1">
+            Authorised by the Executive Director of Marketing<br>
+            © 07 Dec, 2021 University of Tasmania, Australia. ABN 30 764 374 782. CRICOS Provider Code 00586B<br>
+            <a href=""style="color:white;" data-bs-toggle="modal" data-bs-target="#RegP-UserPrivacy">Privacy</a>
+            </font></p>
+        </div>
+       
     </div>  
     <div class="modal" id="RegP-UserPrivacy">
         <div class="modal-dialog">
