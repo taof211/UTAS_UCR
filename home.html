@@ -17,9 +17,9 @@
                         <div class="dropdown">
                             <img src="icon/mune.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" width="auto" height="17">
                             <ul class="dropdown-menu dropdown-menu-dark  bg-transparent" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">Rental</a></li>
-                                <li><a class="dropdown-item" href="#">Adiminitration</a></li>
+                                <li><a class="dropdown-item" href="home.html">Home</a></li>
+                                <li><a class="dropdown-item" href="subpages/Rental.html">Rental</a></li>
+                                <li><a class="dropdown-item" href="subpages/management.html">Adiminitration</a></li>
                             </ul>&nbsp;
                         </div>&nbsp;
                     </li>
@@ -28,7 +28,6 @@
                     </li>
                 </ul>
             </div>
-           
             <!-- navbar right -->
             <div>   
                 <ul class="nav justify-content-end ">
@@ -42,7 +41,7 @@
                         <div class="dropdown">
                             <img src="icon/user.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" width="auto" height="17">
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end  bg-transparent" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#" >Login</a></li>
+                                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#hplogin" >Login</a></li>
                                 <li><a class="dropdown-item" href="#">Registration</a></li>
                                 <li><a class="dropdown-item" href="#">My Account</a></li>
                                 <li><a class="dropdown-item" href="#">My Order</a></li>
@@ -57,7 +56,7 @@
         </div >
         <img src="img/homepage-background2.jpg" class="img-fluid" style=" display: table-cell;vertical-align: middle;">
         <div class="button" style="position: relative;top: -70px;left: 40px;text-align: center;display: block;">
-            <button class="btn btn-outline-light rounded-pill translate-middle">Join Now</button>
+            <a href="subpages/registration.html"><button class="btn btn-outline-light rounded-pill translate-middle">Join Now</button></a>
         </div>
     </div>
 
@@ -96,9 +95,9 @@
             <!--底部-->
             <div class="text-container" style="text-align: center">
                 <div style="font-size:20px; margin-top:170px;">
-                    <a href=""><img src="icon/Email.png" width="auto" height="20"></a>
-                    <a href=""><img src="icon/twtter.png" width="auto" height="20"></a>
-                    <a href=""><img src="icon/facebook.png" width="auto" height="20"></a>
+                    <a href="https://www.utas.edu.au/about/contact"><img src="icon/Email.png" width="auto" height="20"></a>
+                    <a href="https://twitter.com/UTAS_"><img src="icon/twtter.png" width="auto" height="20"></a>
+                    <a href="https://www.facebook.com/UniversityofTasmania/?rf=112413105436826"><img src="icon/facebook.png" width="auto" height="20"></a>
                 </div>
 
                 <p style="color:white;line-height:20px"><font size="1">
@@ -108,6 +107,7 @@
                 </font></p>
             </div>
         </div>
+        <!--隐私弹窗-->
         <div class="modal" id="RegP-UserPrivacy">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -181,13 +181,37 @@
                             <button type="submit" class="btn btn-dark">Confirm</button>
                         </form>
                     </div>
-    
                     <!-- Modal Footer -->
                     <div class="modal-footer"></div>
-    
                 </div>
             </div>
-    
         </div>
+        <!--登录弹窗-->
+        <div class="modal" id="hplogin">
+            <div class="modal-dialog modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- Form -->
+                        <form style="text-align: center;margin:10% ">
+                            <img src="img/welcome.png" width="auto" height="70">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">User Name/Email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-dark rounded-pill ">Login</button>
+                            <br>
+                            <p><font size="1"><a href="subpages/registration.html"style="color:black;" >Register</a></font></p>
+                            <p></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
