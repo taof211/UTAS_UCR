@@ -99,13 +99,27 @@ body {
 
 #renp-tabcontent {
     background-color: white;
-    width:51%;
+    width:80%;
+    margin:auto;
+}
+
+#renp-notebook_list {
+    width:60%;
+    margin:auto;
+}
+
+#renp-others_list {
+    width:60%;
     margin:auto;
 }
 
 #renp-backgroundpic {
     width:51%;
     margin:auto;
+}
+
+#renp-bottom-characters {
+    margin-top: -250px;
 }
 
 /*css for detail page*/
