@@ -69,8 +69,21 @@ body {
 }
 .Regp-labelstyle{
     font-size: 12px;
+    color: azure;
 }
 
+RegP-floatinglabelstyle{
+    font-size: 12px;
+    background-color: #000000;
+    color: azure;
+}
+.RegP-floatinginputstyle{
+    border-radius:10px; 
+    background-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    font-size: small;
+    color: #000000;
+}
 /*css rental page*/
 
 /*css for detail page*/
