@@ -15,36 +15,48 @@
 </head>
 
 <body style="height: 900px; color: black;">
-    <nav class="navbar navbar-fixed-top navbar-transpent fixed-top" >
+    <nav class="navbar navbar-transpent fixed-top" >
         <!-- navbar left -->
-        <div>
-            <ul class="nav justify-content-end">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>   
+            <ul class="nav justify-content-end ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item">
-                    <span><a><img src="../icon/mune.png" width="auto" height="22"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"></a></span>
+                    <div class="dropdown">
+                        <img src="../icon/mune.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" width="auto" height="17">
+                        <ul class="dropdown-menu dropdown-menu-dark  bg-transparent" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="../home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="Rental.html">Rental</a></li>
+                            <li><a class="dropdown-item" href="management.html">Adiminitration</a></li>
+                        </ul>&nbsp;
+                    </div>&nbsp;
                 </li>
-                &nbsp;&nbsp;
                 <li class="nav-item">
-                    <span><a><img src="../img/utas-logo.png" width="auto" height="30"></a></span>
-                    
+                    <a><img src="../img/utas-logo.png" width="auto" height="30" ></a>
                 </li>
             </ul>
         </div>
-    
         <!-- navbar right -->
         <div>   
-            
             <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a><img src="../icon/search.png" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
-            </li>
-            <li class="nav-item">
-                <a><img src="../icon/chart.png" width="auto" height="17" ></a>&nbsp;&nbsp;&nbsp;
-            </li>
-            <li class="nav-item">
-                <span><a><img src="../icon/user.png" width="auto" height="17"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown2"></a></span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            </li>
+                <li class="nav-item collapse" id="hp-collasped-search">
+                    <form><input type="text"  placeholder="Press &quot;Enter&quot; to search" ></form>
+                </li>&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#hp-collasped-search" role="button" aria-expanded="false" aria-controls="hp-collapse-search"><img src="../icon/search.png" class="dropdown-toggle" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
+                </li>
+                <li class="nav-item">
+                    <a><img src="../icon/chart.png" class="dropdown-toggle" width="auto" height="17" ></a>&nbsp;&nbsp;&nbsp;
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <img src="../icon/user.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" width="auto" height="17">
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end  bg-transparent" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#hplogin" >Login</a></li>
+                            <li><a class="dropdown-item" href="subpages\registration.html">Registration</a></li>
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">My Order</a></li>
+                        </ul>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                </li>
             </ul>
         </div>
     </nav>
@@ -67,11 +79,11 @@
             <li><a class="dropdown-item" href="#">MY ORDE</a></li>
         </ul>
     </div>
-    <div class="container-fulid RegP-color" id="RegP-Backgrougimage">
+    <div class="container-fulid" id="RegP-Backgrougimage">
         <div class="RegP-bgimage">
             
-            <div class="RegP-color RegP-form" id="RegP-Form">
-                <div class="RegP-centertext">
+            <div class="RegP-form" id="RegP-Form">
+                <div class="RegP-centertext RegP-color">
                     <br><br><br>
                     <h5><b>Hello,Friends!</b></h5>
                     <p>Fill up personal information and start journay with us</p>
@@ -79,9 +91,10 @@
                 <div class="RegP-inform">
                     <!-- Form -->
                     <form action="/action_page.php">
+                        
                         <div class="form-group">
                             <label class="Regp-labelstyle" for="txt_full_name">Full Name</label>
-                            <input type="text" class="form-control RegP-inputstyle" id="txt_full_name"
+                            <input type="text" class="form-control RegP-inputstyle" " id="txt_full_name"
                                 placeholder="Your Full Name" required>
                         </div>
                         <div class="form-group">
@@ -137,9 +150,9 @@
         <br><br><br><br><br><br><br><br>
         <div style="background-color:rgb(0, 0, 0); height: 115px; text-align: center " >
             <div style="font-size:20px; margin:auto">
-                <a href=""><img src="../icon/Email.png" width="auto" height="20"></a>
-                <a href=""><img src="../icon/twtter.png" width="auto" height="20"></a>
-                <a href=""><img src="../icon/facebook.png" width="auto" height="20"></a>
+                <a href="https://www.utas.edu.au/about/contact"><img src="../icon/Email.png" width="auto" height="20"></a>
+                <a href="https://twitter.com/UTAS_"><img src="../icon/twtter.png" width="auto" height="20"></a>
+                <a href="https://www.facebook.com/UniversityofTasmania/?rf=112413105436826"><img src="../icon/facebook.png" width="auto" height="20"></a>
             </div>
 
             <p style="line-height:20px"><font size="1">
