@@ -10,7 +10,7 @@
 </head>
 
 <body style="height: 1730px; background-color: rgb(0, 0, 0);">
-         <!-- navbar -->
+        <!-- navbar -->
         <nav class="navbar navbar-dark bg-dark" >
             <!-- navbar left -->
             <div>   
@@ -61,11 +61,10 @@
 <div style="height: 1830px;background-color: rgb(255, 255, 255);">
     <div>
         <br>
-        <img src="../icon/close.png" style="position: relative;left: 92%;display: block;height: 30px" >
+        <a href="../subpages/Rental.html"><img src="../icon/close.png" style="position: relative;left: 92%;display: block;height: 30px" ></a>
     </div>
 
     <div class="middle-container" style="margin-left: 1%;background-color: rgb(255, 255, 255);">
-      
             <div class="col-sm-10 offset-1">
                 <div class="inside-container" >
                     <div class="row ">
@@ -82,7 +81,7 @@
                                 </div>
                             </div>
                             <br>
-                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;PRICE:&nbsp;&nbsp;$12/h</h4>
+                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;PRICE:&nbsp;&nbsp;$10/h</h4>
                         </div>
                     </div>
 <!--表格-->
@@ -157,11 +156,11 @@
     
 <!-- 底下-->
 <!--搜索-->
-<div claa="container-fluid" style="height: 800px; background-color: rgb(0, 0, 0);">
-    <img src="../img/detail-background.jpg" class="img-fluid">  
+<div claa="container-fluid" style="height: 800px; background-color: rgb(0, 0, 0); ">
+    <img src="../img/detail-background.jpg" class="img-fluid ">  
     <!--底部-->
-    <div style="background-color:rgb(0, 0, 0); height: 115px; text-align: center " >
-        <div style="font-size:20px; margin:auto">
+    <div style="background-color:rgb(0, 0, 0); height: 95px; text-align: center; " >
+        <div style="font-size:20px; margin:auto;">
             <a href="https://www.utas.edu.au/about/contact"><img src="../icon/Email.png" width="auto" height="20"></a>
             <a href="https://twitter.com/UTAS_"><img src="../icon/twtter.png" width="auto" height="20"></a>
             <a href="https://www.facebook.com/UniversityofTasmania/?rf=112413105436826"><img src="../icon/facebook.png" width="auto" height="20"></a>
@@ -251,6 +250,34 @@
             </div>
             <!-- Modal Footer -->
             <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<!--登录弹窗-->
+<div class="modal" id="hplogin">
+    <div class="modal-dialog modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Form -->
+                <form style="text-align: center;margin:10% ">
+                    <img src="../img/welcome.png" width="auto" height="70">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">User Name/Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-dark rounded-pill ">Login</button>
+                    <br>
+                    <p><font size="1"><a href="subpages/registration.html"style="color:black;" >Register</a></font></p>
+                    <p></p>
+                </form>
+            </div>
         </div>
     </div>
 </div>

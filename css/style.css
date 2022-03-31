@@ -118,12 +118,13 @@ RegP-floatinglabelstyle{
 
 #renp-notebook_list {
     width:60%;
-    margin:auto;
+    margin-left: 120px;
+    
 }
 
 #renp-others_list {
     width:60%;
-    margin:auto;
+    ;
 }
 
 #renp-backgroundpic {
@@ -133,6 +134,11 @@ RegP-floatinglabelstyle{
 
 #renp-bottom-characters {
     margin-top: -250px;
+}
+
+#renp-others-pages{
+
+    margin-left: auto;
 }
 
 /*css for detail page*/

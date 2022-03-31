@@ -30,19 +30,22 @@
             </div>
             <!-- navbar right -->
             <div>   
-                <ul class="nav justify-content-end ">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item collapse" id="hp-collasped-search">
+                        <form><input type="text"  placeholder="Press &quot;Enter&quot; to search" ></form>
+                    </li>&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
-                    <a><img src="../icon/search.png" class="dropdown-toggle" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
+                        <a data-bs-toggle="collapse" href="#hp-collasped-search" role="button" aria-expanded="false" aria-controls="hp-collapse-search"><img src="../icon/search.png" class="dropdown-toggle" width="auto" height="17"></a>&nbsp;&nbsp;&nbsp;
                     </li>
                     <li class="nav-item">
-                    <a><img src="../icon/chart.png" class="dropdown-toggle" width="auto" height="17" ></a>&nbsp;&nbsp;&nbsp;
+                        <a><img src="../icon/chart.png" class="dropdown-toggle" width="auto" height="17" ></a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
                             <img src="../icon/user.png" class="dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" width="auto" height="17">
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end  bg-transparent" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#hplogin" >Login</a></li>
-                                <li><a class="dropdown-item" href="../subpages/registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="../subpages\registration.html">Registration</a></li>
                                 <li><a class="dropdown-item" href="#">My Account</a></li>
                                 <li><a class="dropdown-item" href="#">My Order</a></li>
                             </ul>
@@ -76,7 +79,7 @@
                                 <h5>MacBook Pro 14 Inch</h5>
                                 <p>From AU$10 per hour</p>
                                 <button type="button" class="btn btn-dark">Add to Chart</button><hr>
-                                <a>Learn More ></a>
+                                <a href="../subpages/details.html">Learn More ></a>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -156,21 +159,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div id="renp-notebook-pages">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center" id="renp-page-table1">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    
                 </div>
 
                 <div class="tab-pane fade" id="renp-others_list" role="tabpanel" aria-labelledby="profile-tab">
@@ -261,22 +250,27 @@
                             </div>
                         </li>
                     </ul>
-                    <div id="renp-others-pages">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center" id="renp-page-table2">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    
+                    
                 </div>
+                <br>
+                <br>
+                <div id="renp-others-pages">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center" id="renp-page-table2">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <br>
             </div>
         </div>
 
@@ -374,6 +368,34 @@
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+        <!--登录弹窗-->
+        <div class="modal" id="hplogin">
+            <div class="modal-dialog modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <button style="margin-left: 5%; margin-top: 5%;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <form style="text-align: center;margin:10% ">
+                            <img src="../img/welcome.png" width="auto" height="70">
+                            <div class="form-floating mb-3">
+                                <input type="email"  style="height: 20px" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">User Name/Email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" style="height: 20px" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-dark rounded-pill ">Login</button>
+                            <br>
+                            <p><font size="1"><a href="subpages/registration.html"style="color:black;" >Register</a></font></p>
+                            <p></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
