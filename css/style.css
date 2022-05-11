@@ -285,3 +285,104 @@ RegP-floatinglabelstyle{
 #RegP-UserPrivacy{
     text-align: left;
 }
+
+body{
+	overflow: hidden;
+	text-align: center;
+	
+}
+.car{
+	width:60%;
+	border: 1px solid #ffffff;
+	border-radius: 19px;
+	margin-left: 300px;
+	
+	
+}
+.car .good{
+	background-color: #ffffff;
+	height:55px;
+	font-size: 22px;
+	color:rgb(0, 0, 0);
+	line-height: 55px;
+	font-weight: 200;
+	border-radius: 18px 18px 0 0;
+	margin-bottom: 20px;
+	
+}
+.car .good table{
+	width:100%;
+}
+.car .goods{
+	height:45px;
+	line-height: 45px;
+	font-size: 20px;
+	font-weight: 200;
+    color: white;
+}
+.car .goods table{
+	width:100%;
+}
+.car .goods table .btn1{
+	width: 70px;
+	height:28px;
+	border: 2px solid #ffffff;
+	background-color: white;
+	color: #999999;
+	border-radius: 4px;
+	font-weight: 600;
+}
+.car .goods table button:hover{
+	background-color: #999999;
+	color: white;
+}
+.car .goods1{
+	margin-top: 10px;
+	background-color: ;
+	height:50px;
+	font-size: 19px;
+	color:rgb(0, 0, 0);
+	line-height: 50px;
+	font-weight: 200;
+	border-radius:0 0 10px 10px ;
+}
+.car .goods2{
+	border-top: 1px solid #ffffff;
+	margin-top: 10px;
+	height:50px;
+	font-size: 19px;
+	line-height: 50px;
+	font-weight: 200;
+	border-radius:0 0 10px 10px ;
+    color: white;
+}
+.car .goods1 table{
+	
+	width:100%;
+}
+.car .goods1 .btn2{
+	width: 70px;
+	height:28px;
+	border: 2px solid #ffffff;
+	background-color: white;
+	color: #000000;
+	border-radius: 4px;
+	font-weight: 600;
+}
+.car .goods1 .btn2:hover{
+	color:white;
+	background-color: #000000;
+}
+.car .goods1 .btn3{
+	width: 80px;
+	height:30px;
+	border: 2px solid hsl(0, 0%, 100%);
+	background-color: white;
+	color: #000000;
+	border-radius: 4px;
+	font-weight: 400;
+}
+.car .goods1 .btn3:hover{
+	color:white;
+	background-color:#000000 ;
+}
